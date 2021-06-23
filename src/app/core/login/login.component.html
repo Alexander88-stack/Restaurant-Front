@@ -1,0 +1,68 @@
+
+<div class="container-login100">
+    <div class="wrap-login100">
+            <div class="login100-pic" data-tilt="" >
+                <img src="../../../assets/img-01.webp" alt="IMG">
+            </div>
+        <form class="login100-form validate-form" 
+                    [formGroup]="loginForm" 
+                    (ngSubmit)="login()">
+                <span class="login100-form-title">
+                   <strong> Member Login</strong>
+                </span>
+            <div class="wrap-input100 validate-input alert-validate" data-validate="Valid email is required: ex@abc.xyz">
+                        <!-- Aduti aminte sa potrivesti numele "email"- "mail" etc -->
+                <input class="input100" 
+                        
+                        name="mail" 
+                        placeholder="Email" 
+                        formControlName="mail"
+                        style="background-image: 
+                                url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                    <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                </span>
+            </div>
+
+            <div class="wrap-input100 validate-input"data-validate="Password is required " > 
+                <input class="input100" 
+                        type="password" 
+                        name="pass" 
+                        placeholder="Password" 
+                        formControlName="password"
+
+                        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                    <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    
+                </span>
+            </div>
+            <div class="container-login100-form-btn">
+                <button class="login100-form-btn">
+                        <strong> Login</strong>
+                </button>
+            </div>
+            
+            <div class="checkbox">
+                <input type="checkbox" 
+                        id="checkbox-login"
+                        formControlName="remember">
+                <label for="checkbox-login"> Remember me </label>
+            </div>
+            <div>
+                <a (click)="logout()" class="cursor" >
+                    <i class="fa fa-power-off"> Log Out</i> 
+                </a>
+            </div>
+            <div class="text-center">
+                <span class="txt1">
+                        Forgot
+                </span>
+                    <a class="txt2" href="#" routerLink="/register">
+                          Username / Password?
+                    </a>
+            </div>
+            
+        </form>
+    </div>
+</div>

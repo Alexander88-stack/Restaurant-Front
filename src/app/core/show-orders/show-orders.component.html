@@ -1,0 +1,66 @@
+<body>
+  <!-- La funcion de este boton es de retroceder mas comodo "UI" -->
+  <!-- <div class="onclick">
+    <button onclick="history.back()">
+      Go Back
+    </button>  
+  </div> -->
+
+
+<!-- *ngFor=" let orders of orderList" -->
+    <div class="containerCards" *ngFor="let orders of orderList; let i = index"  >     
+        
+          <div id="table-wrapper">
+            <div class="chair chair-lg"></div>
+            <div class="chair left"></div>
+            <div class="chair left"></div>
+            <div class="chair right"></div>
+            <div class="chair right"></div>
+            <div class="chair chair-lg "></div>
+            <div class="the-table">
+              <div class="plate">
+                <div class="knife"></div>
+                <div class="fork"></div>
+              </div>
+              <div class="plate">
+                <div class="knife"></div>
+                <div class="fork"></div>
+              </div>
+          
+              <div class="plate">
+                <div class="knife"></div>
+                <div class="fork"></div>
+              </div>
+          
+              <div class="plate">
+                <div class="knife"></div>
+                <div class="fork"></div>
+              </div>
+              <div class="plate">
+                <div class="knife"></div>
+                <div class="fork"></div>
+              </div>
+              <div class="plate">
+                <div class="knife"></div>
+                <div class="fork"></div>
+              </div> 
+            </div> 
+          </div> 
+        
+                  <div>
+                    <img src="../../../assets/Logotipo Restaurante Sushi.png" class="card-img-top"  alt="..."> 
+                    <ul>
+                     <li> <p> <strong>Name and Rol:</strong> {{orders.nameAndRol}}</p></li>
+                     <li><p><strong>Table:</strong> {{orders.table}}</p></li> 
+                     <li> <p><strong>Persons:</strong> {{orders.persons}}</p></li>
+                     <li> <p> <strong> Products:</strong> {{orders.products}}</p> </li>
+                    
+                      <a href="#" class="btn btn-primary btn-lg btn-block">Delete Table</a>
+                  </ul>
+                  </div> 
+         
+     </div>    
+        
+      
+
+</body>  

@@ -1,0 +1,39 @@
+<div id="login-box">
+  <form  method="post"[formGroup]="log" (ngSubmit)="saveForm()">
+
+    <div class="left">
+      <h1>Sign up</h1>
+      
+      <input type="text"
+       name="username" 
+       placeholder="Username"
+       formControlName="username" />
+
+      <input type="text"
+       name="mail" 
+       placeholder="E-mail" 
+       formControlName="mail"/>
+       
+
+      <input type="password"
+       name="password" 
+       placeholder="Password" 
+       formControlName="password"/>
+
+      <input type="password" name="password2" placeholder="Retype password" />
+        <div class="text-danger">
+          <!-- <p *ngIf="contrasenasNoValidas()">* The password not match</p> -->
+        </div>
+      <input type="submit" name="signup_submit" value="Sign me up" />
+    </div>
+    
+    <div class="right">
+      
+    </div>
+    <div class="or">OR</div>
+  </form>
+</div>
+  
+      
+      
+    

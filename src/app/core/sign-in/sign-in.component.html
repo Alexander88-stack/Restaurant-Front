@@ -1,0 +1,48 @@
+
+
+
+<body>
+    <main>
+        <div class="contForm">
+            <form  [formGroup]="forma" (ngSubmit)="saveForm()" >  
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label > Name & Rol</label><br>
+                    <input type="text" 
+                        class="form-control" 
+                        formControlName="nameAndRol">
+                  </div><br>
+                  <div class="form-group">
+                    <label >Table Number</label><br>
+                    <input type="text" 
+                        class="form-control" 
+                        formControlName="table">
+                  </div><br>
+                  <div class="form-group ">
+                    <label >Persons</label><br>
+                    <input type="text" 
+                        class="form-control" 
+                        formControlName="persons">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Products</label><br>
+                    <textarea class="form-control" 
+                        id="exampleFormControlTextarea1" 
+                        rows="3"
+                        formControlName="products"></textarea>
+                  </div><br>
+                  
+        
+                  
+                  
+        
+                  <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                </div>
+                
+                
+              </form>
+        </div>
+        <div class="linkShowOrder" routerLink="/show-orders"><button class="linkShowOrderBtn" type="submit">Show Tables Order</button></div>
+
+    </main>
+</body>
